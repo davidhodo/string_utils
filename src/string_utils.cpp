@@ -1,7 +1,7 @@
 #include "string_utils/string_utils.h"
 
 // stolen from: http://oopweb.com/CPP/Documents/CPPHOWTO/Volume/C++Programming-HOWTO-7.html
-void stringUtils::Tokenize(const std::string& str, std::vector<std::string>& tokens, const std::string& delimiters = " ") {
+void string_utils::Tokenize(const std::string& str, std::vector<std::string>& tokens, const std::string& delimiters = " ") {
 	// Skip delimiters at beginning.
 	std::string::size_type lastPos = str.find_first_not_of(delimiters, 0);
 	// Find first "non-delimiter".
@@ -19,7 +19,7 @@ void stringUtils::Tokenize(const std::string& str, std::vector<std::string>& tok
 }
 
 
-void stringUtils::trim(string& str)
+void string_utils::trim(string& str)
 {
 	// from: http://www.codeproject.com/KB/stl/stdstringtrim.aspx
 	string::size_type pos = str.find_last_not_of(' ');

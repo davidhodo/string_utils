@@ -15,7 +15,7 @@
 #include <algorithm>
 using namespace std;
 
-namespace stringUtils {
+namespace string_utils {
 
 	//! converts the given value to a string
 	template <class T>
